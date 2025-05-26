@@ -11,7 +11,7 @@ const start = async () => {
             methods: ['GET', 'POST'],
         });
 
-        await app.listen(PORT, () => console.log(`Server started on PORT ${PORT}`));
+        await app.listen(PORT, '0.0.0.0', () => console.log(`Server started on PORT ${PORT}`));
     } catch (e) {
         console.error('Server failed to start:', e);
     }
